@@ -55,9 +55,9 @@ class DestinationResponse:
     r"""Provides details of a single destination."""
     configuration: Union[DestinationGoogleSheets, DestinationAstra, DestinationAwsDatalake, DestinationAzureBlobStorage, DestinationBigquery, DestinationClickhouse, DestinationConvex, DestinationCumulio, DestinationDatabend, DestinationDatabricks, DestinationDevNull, DestinationDuckdb, DestinationDynamodb, DestinationElasticsearch, DestinationFirebolt, DestinationFirestore, DestinationGcs, DestinationKeen, DestinationKinesis, DestinationLangchain, DestinationMilvus, DestinationMongodb, DestinationMssql, DestinationMysql, DestinationOracle, DestinationPinecone, DestinationPostgres, DestinationPubsub, DestinationQdrant, DestinationRedis, DestinationRedshift, DestinationS3, DestinationS3Glue, DestinationSftpJSON, DestinationSnowflake, DestinationTeradata, DestinationTimeplus, DestinationTypesense, DestinationVectara, DestinationVertica, DestinationWeaviate, DestinationXata] = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('configuration') }})
     r"""The values required to configure the destination."""
-    destination_id: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('destinationId') }})
-    destination_type: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('destinationType') }})
-    name: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('name') }})
-    workspace_id: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('workspaceId') }})
+    destination_id: str = dataclasses.field(metadata={'dataclasses_json': {'letter_case': utils.get_field_name('destinationId')}})
+    name: str = dataclasses.field(metadata={'dataclasses_json': {'letter_case': utils.get_field_name('name')}})
+    workspace_id: str = dataclasses.field(metadata={'dataclasses_json': {'letter_case': utils.get_field_name('workspaceId')}})
+    destination_type: str = dataclasses.field(metadata={'dataclasses_json': {'letter_case': utils.get_field_name('destinationType')}}, default="")
     
 
