@@ -208,7 +208,7 @@ class SourceResponse:
     r"""The values required to configure the source."""
     name: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('name') }})
     source_id: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('sourceId') }})
-    source_type: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('sourceType') }})
     workspace_id: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('workspaceId') }})
-    
+    source_type: str = dataclasses.field(default="", metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('sourceType') }})
+
 
